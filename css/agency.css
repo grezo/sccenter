@@ -900,7 +900,6 @@ body {
 
 .aboutList {
     text-align: left;
-    font-style: italic;
 }
 .aboutList li {
     list-style: none;
@@ -920,5 +919,32 @@ body {
 
 .aboutimg {
     border-radius: 10px;
+    margin-right: 5%;
+    display: none;
 }
 
+@media(min-width:768px) {
+    .aboutimg {
+        display: block;
+        box-shadow: 0 0 55px -25px #121212;
+    }
+}
+
+.mybtn {
+    border: 2px solid;
+    padding: 7px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    -webkit-transition-duration: 1.5s;
+    transition-duration: 1.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.mybtn:hover, .mybtn:focus, .mybtn:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.marginbottom {
+    margin-bottom: 25px;
+}
